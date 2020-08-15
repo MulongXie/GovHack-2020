@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Bootstrap core CSS -->
+    <link href="plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/rules.css">
+</head>
+<body>
+
+<div>
+    <header>
+        <div id="header" class="container-fluid fixed-top">
+        </div>
+    </header>
+    <!--Side bar-->
+    <div id="sidebar" class="border-right bg-light text-center">
+        <h3 class="side-title">Rule</h3>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a>Government</a>
+            </li>
+            <li class="list-group-item">
+                <a>Employer</a>
+            </li>
+            <li class="list-group-item">
+                <a>Employee</a>
+            </li>
+        </ul>
+    </div>
+
+    <button id="toggle-sidebar" class="btn btn-primary float-right">Select Rule</button>
+</div>
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="plugin/jquery/jquery.min.js"></script>
+<script src="plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    $("#toggle-sidebar").click(function () {
+        $("#sidebar").animate({
+            width: "toggle"
+        });
+    });
+</script>
+</body>
+</html>

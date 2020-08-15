@@ -1,14 +1,15 @@
 body{
-    background: url("img/bkg.jpg") no-repeat;
+    background: url("../img/bkg.jpg") no-repeat;
     background-size: cover;
 }
 
 #header{
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 0;
-    width: 700px;
     border-top: #a92159 solid 2px;
     border-bottom: #a92159 solid 2px;
+    position: fixed;
+    transition: 0.1s;
 }
 
 #navbar{
@@ -59,7 +60,6 @@ body{
 }
 
 #about{
-    margin-top: 70px;
     margin-bottom: 20px;
 }
 

@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 
 <header>
-    <div id="header" class="container">
+    <div id="header" class="container-fluid">
         <nav id="navbar" class="navbar navbar-expand-sm justify-content-center">
             <!-- Brand/logo -->
             <ul class="navbar-nav">
@@ -38,7 +38,7 @@
 <main id="main">
     <div id="intro" class="container">
         <div class="row text-center">
-            <h2 style="margin: 30px auto">We provide
+            <h2 style="margin: 120px auto">We provide
                 <span class="magic-text">
                 <i class="purple">I</i>
                 <i class="blue">D</i>
@@ -100,5 +100,21 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(window).scroll(function () {
+        let header = $('#header');
+        if($(window).scrollTop() >= 40){
+            header.addClass('fixed-top');
+            header.css('margin-top', '0');
+            header.css('background', 'LightYellow');
+        }
+        else {
+            header.removeClass('fixed-top');
+            header.css('margin-top', '30px');
+            header.css('background', '')
+        }
+        console.log($(window).scrollTop())
+    })
+</script>
 </body>
 </html>
