@@ -1,0 +1,112 @@
+body{
+    background: url("img/bkg.jpg") no-repeat;
+    background-size: cover;
+}
+
+#header{
+    margin-top: 20px;
+    padding: 0;
+    width: 700px;
+    border-top: #a92159 solid 2px;
+    border-bottom: #a92159 solid 2px;
+}
+
+#navbar{
+    padding: 0 100px 0 100px;
+}
+
+#navbar a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #a92159;
+    width: 120px;
+    text-align: center;
+}
+
+#navbar .logo-img{
+    height: 60px;
+}
+
+#intro{
+    margin-top: 20px;
+}
+
+#intro .into-img{
+    width: 60%;
+}
+
+.magic-text{
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 auto 0;
+    /*display: block;*/
+}
+.red{
+    color: red;
+}
+.blue{
+    color: #55ACEE;
+}
+.orange{
+    color: orange;
+}
+.green{
+    color: green;
+}
+.purple{
+    color: purple;
+}
+
+#about{
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+#about ul{
+    list-style: none;
+}
+
+.list-title{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+#content{
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+#content h4{
+    color: #935116;
+    font-style: italic;
+}
+
+.btns{
+    margin-top: 40px;
+}
+
+.role-btn{
+    width: 200px;
+    margin: 0 20px;
+    background: #D35400;
+    color: #F9E79F;
+    font-weight: bold;
+}
+
+.role-btn:hover{
+    color: #F9E79F;
+    background: #BA4A00;
+}
+
+.bullet {
+    background: #a92159;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+
+    margin-right: 10px;
+}
