@@ -1,0 +1,79 @@
+.home{
+    background-image: url("/assets/images/bkg.jpg");
+    background-size: cover;
+}
+
+#intro{
+    margin-top: 20px;
+}
+
+#intro .into-img{
+    width: 60%;
+}
+
+.magic-text{
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 auto 0;
+    /*display: block;*/
+}
+.red{
+    color: red;
+}
+.blue{
+    color: #55ACEE;
+}
+.orange{
+    color: orange;
+}
+.green{
+    color: green;
+}
+.purple{
+    color: purple;
+}
+
+#about{
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+#about ul{
+    list-style: none;
+}
+
+.list-title{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+#content{
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+#content h4{
+    color: #935116;
+    font-style: italic;
+}
+
+.mat-button {
+  color: black;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #a92159;
+  margin: 20px;
+}
+
+.bullet {
+    background: #a92159;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+
+    margin-right: 10px;
+}
