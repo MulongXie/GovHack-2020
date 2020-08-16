@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../plugin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/gov.css">
+    <script src="../plugin/jquery/jquery.min.js"></script>
+    <script src="../plugin/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="heading">
+<h1>Government Portal</h1>
+</div>
+
+<div id="select-industry" class="container text-center">
+  <h4>Select Industry</h4>
+  <select class="form-control">
+      <option value="1">Agriculture, Forestry and Fishing</option>
+      <option value="2">Mining</option>
+      <option value="3">Information Media and Telecommunications</option>
+      <option value="4">Financial and Insurance Services</option>
+      <option value="5">Rental, Hiring and Real Estate Services</option>
+      <option value="6">Administrative and Support Services</option>
+      <option value="7">Arts and Recreation Services</option>
+  </select>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-4">
+          <div class="container panel">
+              <h4>Current Employment</h4>
+          </div>
+      </div>
+      <div class="col-4">
+          <div class="container panel">
+            <h4>Ease of Living</h4>
+          </div>
+      </div>
+      <div class="col-4">
+          <div class="container panel">
+
+          </div>
+      </div>
+  </div>
+</div>
+
+<div id="modal-program" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Available Programs</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div id="program-details" class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script>
+    let empms = []
+    let groth = []
+</script>
+</body>
+</html>
