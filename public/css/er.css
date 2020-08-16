@@ -1,0 +1,88 @@
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+body{
+  background-image: url("../img/bkg.jpg");
+  position: relative;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  background-color: #FFB68C;
+  color: black;
+  text-align: left;
+  border-radius: 6px;
+  padding: 8px 0;
+  z-index: 1;
+  position: absolute;
+  width: 50vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+* {
+  margin: 0;
+}
+
+.heading {
+  background-color: #a92159;
+}
+
+.heading h1 {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.flex-container {
+  margin-top: 20px;
+  display: flex;
+  /* background-color: yellow; */
+  align-items: center;
+}
+
+.flex-container> div {
+  color: #a92159;
+  width: 25vw;
+  height: auto;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.flex-container > div:hover {
+  background-color: #FFB68C;
+}
+
+.detail {
+  margin: 20px;
+}
+
+.number {
+  font-weight: bold;
+  font-size: 30px;
+  color: #2ECC71;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>employer portal</title>
+    <link rel="stylesheet" href="../css/er.css">
+  <style>
+    body{
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="heading">
+    <h1>Employer Portal</h1>
+  </div>
+  <div class="flex-container">
+    <div>
+      Number of Job Seekers
+      <p class="number">1141.8k</p>
+      <hr><br>
+      <p>2024 expected number</p>
+      <p class="number">1314.3k</p>
+    </div>
+    <div>
+      Industry Growth
+      <p class="number">15.1%</p>
+      in 5 years.
+    </div>
+    <div>
+      Average Salary
+      <p class="number">86.09k</p>
+    </div>
+  </div>
+  <div class="detail">
+    <div style="color: #a92159;">
+      Current Industry: Professional, Scientific and Technical Services.
+    </div>
+  </div>
+
+  <div class="flex-container" style="position: relative;">
+    <div style="flex: 1; background: none;">
+      <img src="../img/computer.png" width=100%;>
+    </div>
+    <div class="popup" onclick="myFunction()" style="flex: 1;">
+      <p>Latest Ads </p>
+      <span class="popuptext" id="myPopup"><ul>
+        <h3>I'm looking for</h3>
+        <li>Title: manager</li>
+        <li>Industry: ICT</li>
+        <li>Salary: 10k</li>
+        <li>Address: kj st. ACT</li>
+        <li>Hashtag: #js #html #web</li>
+      </ul></span>
+    </div>
+  </div>
+  <div class="flex-container">
+    <div style="flex: 1; background: none;">
+      <img src="../img/government.png" width=100%;>
+    </div>
+    <div style="flex: 1;">
+      <p>View All Industries (Gov Portal) </p>
+    </div>
+  </div>
+  <div class="flex-container">
+    <div style="flex: 1; background: none;">
+      <img src="../img/employee.png" width=100%;>
+    </div>
+    <div style="flex: 1;">
+      <p>past ads</p>
+    </div>
+  </div>
+
+  <script>
+  // When the user clicks on <div>, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.js"></script>
+<script>
+    function arrayToTable(tableData) {
+        var table = $('<table></table>');
+        $(tableData).each(function (i, rowData) {
+            var row = $('<tr></tr>');
+            $(rowData).each(function (j, cellData) {
+                row.append($('<td>'+cellData+'</td>'));
+            });
+            table.append(row);
+        });
+        return table;
+    }
+
+    $.ajax({
+        type: "GET",
+        url: "assets/data/ProjectIndustryProjections.csv",
+        success: function (data) {
+            $('body').append(arrayToTable(Papa.parse(data).data));
+        }
+    });
+</script>
+</body>
+</html>
