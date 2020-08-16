@@ -30,18 +30,26 @@
 
 <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
 <script>
-    var myPlot = document.getElementById('board')
+    const myPlot = document.getElementById('board');
 
     let labels = ['Health', 'Housing', 'Transport', 'Food', 'Entertainment', 'Education', 'Other']
-    let values = [5, 25, 10, 30, 10, 5, 5]
+    let values = [5, 25, 5, 30, 10, 10, 5]
     let programs = [
         ['H1', 'H2'],
         ['Ho1', 'Ho2'],
         ['Trans1', 'Trans2'],
         ['Food1', 'Food2'],
         ['Ent1', 'Ent2'],
-        ['ANU', 'UC'],
+        ['ANU-Computer Science', 'UC-Computer Science'],
         []
+    ]
+    let links = [
+        [],
+        [],
+        [],
+        [],
+        [],
+        ['https://www.anu.edu.au/', 'https://www.canberra.edu.au/']
     ]
 
     var texts = []
@@ -75,10 +83,12 @@
         let label = data.points[0].label
         let index = labels.indexOf(label)
         let program = programs[index]
+        let link = links[index]
 
         let content = "<h3>" + label + "</h3>"
         for(let i = 0; i < program.length; i++){
-            content += "<br>" + program[i]
+            content += '<br><a href="' + link[i] + '">'
+                + program[i] + '</a>'
         }
 
         $("#program-details").html(content)
