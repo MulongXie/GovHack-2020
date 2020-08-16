@@ -10,27 +10,28 @@
 <body>
 
 <div>
-    <header>
-        <div id="header" class="container-fluid fixed-top">
-        </div>
-    </header>
-    <!--Side bar-->
-    <div id="sidebar" class="border-right bg-light text-center">
-        <h3 class="side-title">Rule</h3>
-        <ul class="list-group">
-            <li id="li-gov" class="rule-list list-group-item">
-                <a>Government</a>
-            </li>
-            <li id="li-employer" class="rule-list list-group-item">
-                <a>Employer</a>
-            </li>
-            <li id="li-employee" class="rule-list list-group-item">
-                <a>Employee</a>
-            </li>
-        </ul>
-    </div>
+<!--    <div id="header" class="container-fluid fixed-top">-->
+<!--        <button id="toggle-sidebar" class="rounded-circle btn btn-primary float-right">Select Rule</button>-->
+<!--    </div>-->
+    <button id="toggle-sidebar" class="rounded-circle btn btn-primary">Select Rule</button>
 
-    <button id="toggle-sidebar" class="btn btn-primary float-right">Select Rule</button>
+    <div id="sidebar" class="border-right bg-light text-center">
+    <h3 class="side-title">Rule</h3>
+    <ul class="list-group">
+        <li id="li-gov" class="rule-list list-group-item active">
+            <a>Government</a>
+        </li>
+        <li id="li-employer" class="rule-list list-group-item">
+            <a>Employer</a>
+        </li>
+        <li id="li-employee" class="rule-list list-group-item">
+            <a>Employee</a>
+        </li>
+    </ul>
+</div>
+
+    <div id="content" class="container">
+    </div>
 </div>
 
 

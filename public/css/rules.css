@@ -6,8 +6,9 @@ li:hover{
 
 #header{
     height: 60px;
-    z-index: -1;
+    z-index: 1;
     border-bottom: #dee2e6 1px solid;
+    background: #a92159;
 }
 
 #sidebar{
@@ -16,6 +17,8 @@ li:hover{
     padding-top: 20px;
     /*border-right: #6c757d 1px solid;*/
     float: left;
+    z-index: 2;
+    position: fixed;
 }
 
 #sidebar .list-group-item{
@@ -27,6 +30,17 @@ li:hover{
 }
 
 #toggle-sidebar{
-    margin-top: 10px;
-    margin-right: 20px;
+    position: fixed;
+    bottom: 100px;
+    height: 80px;
+    width: 80px;
+    right: 10px;
+    z-index: 10;
+}
+
+#content{
+    height: 1000px;
+    background: #55ACEE;
+    z-index: 0;
+    position: relative;
 }
