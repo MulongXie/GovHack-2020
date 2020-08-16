@@ -1,3 +1,8 @@
+body{
+    background: url("../img/bkg.jpg") no-repeat;
+    background-size: cover;
+}
+
 li:hover{
     background: #D5D8DC;
     cursor: pointer;
@@ -34,13 +39,41 @@ li:hover{
     bottom: 100px;
     height: 80px;
     width: 80px;
-    right: 10px;
+    right: 40px;
     z-index: 10;
 }
 
-#content{
-    height: 1000px;
-    background: #55ACEE;
-    z-index: 0;
-    position: relative;
+/*
+-------------- Gov --------------
+*/
+.heading {
+    background-color: #a92159;
+}
+
+.heading h1 {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.detail {
+    margin-top: 20px;
+}
+
+.panel{
+    /*background: #a92159;*/
+}
+
+.growth-img{
+    height: 200px;
+}
+
+.panel-number{
+    font-weight: bold;
+    font-size: 30px;
+    color: #2ECC71;
+}
+
+#chart-board{
+    padding-left: 130px;
 }

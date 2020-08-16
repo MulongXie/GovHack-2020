@@ -9,28 +9,91 @@
 </head>
 <body>
 
-<div>
-<!--    <div id="header" class="container-fluid fixed-top">-->
-<!--        <button id="toggle-sidebar" class="rounded-circle btn btn-primary float-right">Select Rule</button>-->
-<!--    </div>-->
-    <button id="toggle-sidebar" class="rounded-circle btn btn-primary">Select Portal</button>
+    <div>
+        <button id="toggle-sidebar" class="rounded-circle btn btn-primary">Select Portal</button>
+        <div id="sidebar" class="border-right bg-light text-center" style="display: none">
+            <h3 class="side-title">Portal</h3>
+            <ul class="list-group">
+                <li id="li-gov" class="rule-list list-group-item active">
+                    <a>Government</a>
+                </li>
+                <li id="li-employer" class="rule-list list-group-item">
+                    <a>Employer</a>
+                </li>
+                <li id="li-employee" class="rule-list list-group-item">
+                    <a>Employee</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-    <div id="sidebar" class="border-right bg-light text-center">
-    <h3 class="side-title">Portal</h3>
-    <ul class="list-group">
-        <li id="li-gov" class="rule-list list-group-item active">
-            <a>Government</a>
-        </li>
-        <li id="li-employer" class="rule-list list-group-item">
-            <a>Employer</a>
-        </li>
-        <li id="li-employee" class="rule-list list-group-item">
-            <a>Employee</a>
-        </li>
-    </ul>
-</div>
+    <div id="portal-gov" class="container text-center">
+        <div class="heading">
+            <h1>Government Portal</h1>
+        </div>
+        <div class="container text-center mt-4 mb-4">
+            <h4>Select Industry</h4>
+            <select id="select-industry"  class="form-control">
+                <option value="1">Agriculture, Forestry and Fishing</option>
+                <option value="2">Mining</option>
+                <option value="3">Information Media and Telecommunications</option>
+                <option value="4">Financial and Insurance Services</option>
+                <option value="5">Rental, Hiring and Real Estate Services</option>
+                <option value="6">Administrative and Support Services</option>
+                <option value="7">Arts and Recreation Services</option>
+            </select>
+        </div>
+        <div class="container text-center">
+            <h3 class="industry-title">Agriculture, Forestry and Fishing</h3>
+        </div>
 
-    <div id="content" class="container">
+        <div id="growth" class="container row mt-4 mb-4">
+            <div class="col-6 text-center">
+                <img class="growth-img" src="../img/dec.jpg">
+            </div>
+            <div class="col-6">
+                <h3>Growth Rate:</h3>
+                <span class="growth-numb panel-number">-1.2</span>
+            </div>
+        </div>
+
+        <div class="container" style="margin-bottom: 50px">
+            <div class="row">
+                <div class="col-6">
+                    <div class="container panel">
+                        <h4>Current Employment</h4>
+                        <p class="current-employment panel-number">332000</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="container panel">
+                        <h4>Ease of Living</h4>
+                        <p class="living-ease panel-number">7</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container align-items-center">
+            <div id="chart-board" class="align-items-center">
+            </div>
+        </div>
+
+        <div id="modal-program" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Available Programs</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div id="program-details" class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -39,5 +102,8 @@
 <script src="../plugin/jquery/jquery.min.js"></script>
 <script src="../plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="../js/rule.js"></script>
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script src="../js/piechart.js"></script>
+
 </body>
 </html>

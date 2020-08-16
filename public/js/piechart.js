@@ -1,4 +1,4 @@
-const myPlot = document.getElementById('board');
+const myPlot = document.getElementById('chart-board');
 
 let labels = ['Health', 'Housing', 'Transport', 'Food', 'Entertainment', 'Education', 'Other']
 let values = [5, 25, 5, 30, 10, 10, 5]
@@ -46,6 +46,7 @@ var layout = {
 };
 
 Plotly.newPlot('chart-board', data, layout);
+
 myPlot.on('plotly_click',function (data) {
     $('#modal-program').modal('toggle')
     let label = data.points[0].label
