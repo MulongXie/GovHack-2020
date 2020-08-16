@@ -1,0 +1,82 @@
+{
+	"Accountant": {
+		"Avg Salary": 54392,
+		"Courses": ["Bachelor degree in Accounting or Bachelor degree in Accounting and Financing. 3 Year degrees."],
+		"Projected growth": 9.7
+	},
+
+	"ICT Business and Systems Analysts": {
+		"Avg Salary": 87694,
+		"Courses": [
+			"Bachelor of Business Information Systems",
+			"Degree in Business and a Short course in Business Analysis."
+		],
+		"Projected growth": 12.9
+	},
+	"Solicitors": {
+		"Avg Salary": 85597,
+		"Courses": [
+			"Bachlor of Law (3 Years) + 18-24 Months of supervised practice."
+		],
+		"Projected growth":16.9
+
+	},
+
+	"Electricians": {
+		"Avg Salary": 70000,
+		"Courses": [
+			"Electrical apprenticeship (4 years)",
+			"Complete Certificate III in Electrotechnology Electrician (UEE30811)."
+		],
+		"Projected growth": 4.9
+	},
+	"Chef": {
+		"Avg Salary": 56229,
+		"Courses": [
+			"Certificate III in Commercial Cookery (SIT30816)"
+		],
+		"Projected growth": 16.1
+	},
+	"Endorsed Enrolled Nurse": {
+		"Avg Salary": 62845,
+		"Courses": [
+			"Diploma in Nursing (HLT54115)."
+		],
+		"Projected growth":11.9
+	},
+
+	"Registered Nurse": {
+		"Avg Salary": 70000,
+		"Courses": [
+			"Bachelor of Nursing"
+		],
+		"Projected growth":11.7
+	},
+
+	"Pharmacists": {
+		"Avg Salary": 80000,
+		"Courses": [
+			"Bachelor of Pharmacy (4 Years)"
+		],
+		"Projected growth":5.8
+	},
+
+	"Surgeon": {
+		"Avg Salary": 115862,
+		"Courses": [
+			"Bachelor of Medical Science",
+			"Work at a Hospital for 2-3 years",
+			"Enter Royal Australasian College of Surgeons’ Surgical Education and Training (SET) for 5-6 years."
+		],
+		"Projected growth":10.1
+	},
+
+	"Computer Network Professionals": {
+		"Avg Salary": 62480,
+		"Courses": [
+			"Bachelor of COmputer Science",
+			"Cisco Certified Network Associate (CCNA)"
+		],
+		"Projected growth":26.2
+	}
+}

@@ -1,0 +1,46 @@
+<html>
+<body>
+<div style="width: 50%;margin: 25% 25% 25% 25%;font-family: 'Segoe UI',Arial,sans-serif;">
+	<div style="float:left; margin: 0% 0% 0% 5%">
+		<span>Annual income</span>
+		<br>
+		<span><input type=number id=annualInc></span>
+	</div>
+	<div style="float:right; margin: 0% 20%">
+		<span>Retirement age</span>
+		<br>
+		<span><input type=number id=reAge></span>
+	</div>
+	
+	<div style="float:left; clear:left; margin: 0% 0% 0% 5%">
+		<span>Current age</span>
+		<br>
+		<span><input type=number id=curAge></span>
+	</div>
+	<div style="float:right;clear:right;margin: 0% 20%" >
+		<span>Current superannuation</span>
+		<br>
+		<span><input type=number id=curSup></span>
+	</div>
+	
+	<div style="width: 100%;clear: both;margin: 0% 0% 0% 5%">
+		<button onclick="calcSuper()" style="color: #fff!important;background-color: #4CAF50!important;border: none;display: inline-block;margin:1% 0% 0% 0%;padding: 8px 16px;">Calculate superannuation at time of retirement »</button>
+		<p id=finalValue></p>
+	</div>
+</div>
+
+<script>
+
+function calcSuper(){
+
+var superRate = 0.095;
+var yearsGenSuper = document.getElementById("reAge").value - document.getElementById("curAge").value;
+console.log(yearsGenSuper);
+var totalSuper = 0.095 *document.getElementById("annualInc").value * yearsGenSuper + 1.0*document.getElementById("curSup").value;
+document.getElementById("finalValue").innerHTML = "By retirement you will have <br><b>$"+totalSuper.toFixed(2)+"</b> in Superannuation.";
+console.log(totalSuper);
+}
+</script>
+
+</body>
+</html>
