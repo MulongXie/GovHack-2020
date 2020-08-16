@@ -18,13 +18,13 @@
     <div id="sidebar" class="border-right bg-light text-center">
         <h3 class="side-title">Rule</h3>
         <ul class="list-group">
-            <li class="list-group-item">
+            <li id="li-gov" class="rule-list list-group-item">
                 <a>Government</a>
             </li>
-            <li class="list-group-item">
+            <li id="li-employer" class="rule-list list-group-item">
                 <a>Employer</a>
             </li>
-            <li class="list-group-item">
+            <li id="li-employee" class="rule-list list-group-item">
                 <a>Employee</a>
             </li>
         </ul>
@@ -37,12 +37,6 @@
 <!-- Bootstrap core JavaScript -->
 <script src="plugin/jquery/jquery.min.js"></script>
 <script src="plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script>
-    $("#toggle-sidebar").click(function () {
-        $("#sidebar").animate({
-            width: "toggle"
-        });
-    });
-</script>
+<script src="js/rule.js"></script>
 </body>
 </html>
